@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alege viața spune nu drogurilor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" href="logo.png" type="png/image">
+        <style>
+            nav li a{
+                background-color: blueviolet;
+            }
+            @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #realitate {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .gânduri {
+      font-size: 24px;
+      opacity: 0.6;
+      filter: blur(1.5px);
+      transition: all 1s ease-in-out;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      animation: levitare 5s infinite;
+    }
+
+    @keyframes levitare {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -55%) scale(1.2); }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .emoții {
+      font-size: 32px;
+      margin: 10px;
+      animation: emoțieColor 3s infinite alternate;
+    }
+
+    @keyframes emoțieColor {
+      0% { color: #ff007f; }
+      50% { color: #7f00ff; }
+      100% { color: #00ffff; }
+    }
+
+    .viziuni {
+      margin-top: 30px;
+    }
+
+    .culoare {
+      font-size: 60px;
+      display: inline-block;
+      margin: 0 15px;
+      animation: plutireCuloare 4s infinite ease-in-out;
+    }
+
+    @keyframes plutireCuloare {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-30px) rotate(20deg); }
+      100% { transform: translateY(0); }
+    }
+
+    #soare {
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, yellow 30%, orange 70%, red 100%);
+      border-radius: 50%;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      animation: orbita 15s linear infinite;
+      box-shadow: 0 0 30px 10px rgba(255, 200, 0, 0.7);
+    }
+
+    @keyframes orbita {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      50% { transform: translate(800px, 300px) rotate(180deg); }
+      100% { transform: translate(0, 0) rotate(360deg); }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li>
+                <a href="pagina.html">Prima parte</a>
+            </li>
+            <li>
+                <a href="marturi.html">Mărturii reale</a>
+            </li>
+            <li>
+                <a href="cum.html">Cum spun nu drogurilor</a>
+            </li>
+                <li>
+                    <a href="simulare.html">Simulare</a>
+                </li>
+                <li>
+                    <a href="pagina1.html">Partea a doua</a>
+                </li>
+            </nav>
+            </header>
+            <div style="margin-top:10px">
+  <div id="realitate" style="color:white;">
+    <div id="realitate" style="color:white;">
+        <div id="soare"></div>
+    
+        <div class="gânduri">Unde sunt?</div>
+        <div class="emoții" id="extaz">Mă topesc în lumină...</div>
+        <div class="emoții" id="mirare">Totul vibrează...</div>
+        <div class="emoții" id="frică">Dacă nu mă mai întorc?</div>
+        <div class="viziuni">
+          <span class="culoare">🌌</span>
+          <span class="culoare">🌠</span>
+          <span class="culoare">☀️</span>
+          <span class="culoare">🌈</span>
+          <span class="culoare">🌀</span>
+        </div>
+      </div>
+
+      <script>
+        setInterval(() => {
+          const gândNou = document.createElement("div");
+          gândNou.className = "gânduri";
+          gândNou.innerText = "Cine sunt eu?";
+          gândNou.style.top = Math.random() * 80 + "%";
+          gândNou.style.left = Math.random() * 80 + "%";
+          document.getElementById("realitate").appendChild(gândNou);
+    
+          setTimeout(() => {
+            gândNou.remove();
+          }, 8000);
+        }, 4000);
+      </script>
+            <div style="margin-top:120px">
+      <img id="Bashes" src="d.jpg"/>
+      <img id="Bashes" src="d1.jpg"/>
+      <img id="Bashes" src="d2.jpg"/>
+</div>
+      </div>
+    </body>
+    </html>

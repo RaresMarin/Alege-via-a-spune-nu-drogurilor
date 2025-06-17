@@ -1,0 +1,175 @@
+body{
+    background-image:url('poza.jpg');
+    background-size:cover;
+}
+
+#Afis{
+    box-shadow: #291aac 1px 5px 10px 12px;
+    height:40%;
+    width:30%;
+}
+
+h1{
+    text-align:center;
+    color:#f8d71c;
+    font-size:45px;
+}
+
+
+p{
+    color:beige;
+    font-size:30px;
+}
+
+table{
+    color:white;
+    font-size:28px;
+    border: 5px solid #f8d71c;
+    width:100%;
+}
+
+td{
+    border: 5px solid beige;
+}
+
+th{
+    border: 5px solid #291aac;
+    width:20%;
+}
+
+img{
+
+    width:50%;
+}
+
+li {
+    list-style-type:none;
+    text-align:center;
+}
+
+nav li a{
+    list-style-type:none;
+    padding:2%;
+    margin:10px;
+    color:white;
+    list-style: none;
+    font-size:20px;
+    border-radius:10px;
+    background-color: #291acc;
+}
+
+nav li{
+    display:inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:#291aac;
+    background-color:aliceblue;
+}
+
+li:hover{
+    background-color: #f8d71c;
+    color:black;
+}
+
+video{
+    width:90%;
+}
+
+li{
+    color:white;
+    font-size:20px;
+}
+
+.clasa{
+   background-color:rgba(217, 213, 203, 0.555);
+   width:28%;
+   margin:20px;
+   border-radius: 20px;
+   display:inline-block;
+}
+
+.clasa2{
+    background-color:rgba(217, 213, 203, 0.555);
+    width:45%;
+    margin:20px;
+    border-radius: 20px;
+    display:inline-block;
+ }
+
+ 
+.clasa1{
+    text-align:center;
+    width:17%;
+    margin:20px;
+    display:inline-block;
+ }
+
+
+label{
+    color:rgb(255, 255, 0);
+}
+
+address{
+    color:aliceblue;
+}
+
+.Experi{
+    width:40%;
+    display: inline-block;
+}
+
+ul{
+    font-size:20px;
+}
+
+button{
+    margin:20px;
+    padding:15px;
+    border-radius: 20px;
+    color:#291aac;
+    background-color: #f8d71c;
+}
+
+button:hover{
+    color:#f8d71c;
+    background-color: #291aac;
+}
+
+form{
+    height:300px;
+}
+
+form input{
+    height:50px;
+}
+
+#Bashes{
+      display:inline-block;
+      width:30%;
+      height:500px;
+      margin:10px;
+      border-radius:20px 30px 40px;
+      transform:rotate(180deg);
+      filter: blur(5px);
+}
+
+#Bashes:hover{
+    transform:scale(1.2);
+}
+
+.sfat{
+    width:30%;
+    color:aliceblue;
+    background-color:rgba(6, 77, 255, 0.555);
+    display:inline-block;
+    margin:10px;
+}
+
+ol{
+    text-align:center;
+}
