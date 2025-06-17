@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alege viața spune nu drogurilor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" href="logo.png" type="png/image">
+    </head>
+    <body>
+            <nav>
+                <li>
+                    <a href="pagina1.html">Partea a doua</a>
+                </li>
+                <li>
+                    <a href="tipuri.html">Tipuri de droguri</a>
+                </li>
+                <li>
+                    <a href="comp.html">Compoziție chimică</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                    <li>
+                        <a href="pagina.html">Prima parte</a>
+                    </li>
+            </nav>
+            <div style="margin-top:100px;">
+                
+                <img style="width:39%;float:right;" src="poza3.jpg"/>
+        <form name="form" onsubmit="return bici()">
+            <h1 style="width:60%;">Contact</h1>
+            <label>Nume</label>
+            <input style="display:block;width:60%;" type="text" name="Nume" placeholder="Sue">
+            <label>Prenume</label>
+            <input style="display:block;width:60%;" name="pre" type="text" placeholder="Davis">
+            <label>Email</label>
+            <input style="display:block;width:60%;" name="email" type="email" placeholder="suedavis69@gmail.ro">
+            <label>Parolă</label>
+            <input style="display:block;width:60%;"  name="pas" type="passwoard" placeholder="***********">
+            <button type="submit">Trimite</buton>
+            <button type="reset">Resetează</button>
+        </form>
+    </div>
+    <script>
+        function bici(){
+     let x = document.forms['form']['Nume'].value;
+     let y = document.forms['form']['pre'].value;
+     let z = document.forms['form']['email'].value;
+     let q = document.forms['form']['pas'].value;
+
+     if(x == "" && y == "" && z=="" && q=="")
+     alert("De ce nu ai introdus toate datele?")
+    else
+    document.write("Salut " + x + " " + y + "<br>")
+    document.write("Emailul tau este " + z + " iar parola este " + q)
+    document.body.style.backgroundColor="navy";
+    document.body.style.color="white";
+    document.body.style.textAlign="center";
+    document.body.style.fontSize="30px";
+        }
+    </script>
+        </body>
+        </html>

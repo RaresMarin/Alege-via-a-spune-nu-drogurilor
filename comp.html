@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alege viața spune nu drogurilor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" href="logo.png" type="png/image">
+    </head>
+    <body>
+            <nav>
+                <li>
+                    <a href="pagina1.html">Partea a doua</a>
+                </li>
+                <li>
+                    <a href="tipuri.html">Tipuri de droguri</a>
+                </li>
+                <li>
+                    <a href="comp.html">Compoziție chimică</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                    <li>
+                        <a href="pagina.html">Prima parte</a>
+                    </li>
+            </nav>
+            <div style="margin-top:100px">
+            <h1>Drogurile</h1>
+            <p>Un flagel cu   care    se  confruntă umanitatea în  zilele noastre este    consumul de droguri.Drogurile sunt    substanţe organice, naturale sau   de   sinteză, al  căror     consum creează dependenţă fizică şi  psihică şi  tulburări grave ale   activităţii mentale, ale percepţiei şi ale comportamentului.</p>
+            <div class="clasa">
+                <ol>
+                    <h2>1. Cocaină </h2>
+                    <ul>Nume chimic: benzoilmetilecgonină</ul>
+                    <ul>Formulă chimică: C17H21NO4</ul>
+                    <ul>Masă moleculară: ~303.35 g/mol</ul>
+                </ol>
+            </div>
+            <div class="clasa">
+                <ol>
+                    <h2>2. Amfetamină</h2>
+                    <ul>Nume chimic: α-metilfenetilamină</ul>
+                    <ul>Formulă chimică: C9H13N</ul>
+                    <ul>Masă moleculară: ~135.21 g/mol</ul>
+                </ol>
+            </div>
+            <div class="clasa">
+                <ol>
+                    <h2>3. MDMA (ecstasy)</h2>
+                    <ul>Nume chimic: 3,4-metilenedioximetamfetamină</ul>
+                    <ul>Formulă chimică: C11H15NO2</ul>
+                    <ul>Masă moleculară: ~193.25 g/mol</ul>
+                </ol>
+            </div>
+            <div class="Experi">
+            <p>Putem calcula nivelul de substanţe din sânge, adică doza dacă cunoaștem greutatea persoanei și cantitatea substanței.</p>
+            <label>Greutatea</label>
+            <input id="greutate" type="number" placeholder="50">
+            <label>Cantitate</label>
+            <input id="cantitate" type="number"  placeholder="0.5">
+            <p style="color:white;">Rezultatul este <span id="rezultati"> 25mg </span></p>
+            <button onclick="rezultat()">Modifică valorile</button>
+        </div>
+        <script>
+            function rezultat(){
+            const n = parseFloat(document.getElementById("greutate").value) || 0;
+            const m = parseFloat(document.getElementById("cantitate").value) || 0;
+            const produsul = n * m;
+            document.getElementById("rezultati").textContent = produsul + "mg";
+            }
+        </script>
+        <div class="Experi" style="float:right;margin:0px;">
+            <p>Concentrația plasmatică, aproximativă, din sânge se calculează dacă știm volumul și doza.</p>
+            <label>Volum</label>
+            <input id="volum" type="number" placeholder="198">
+            <label>Doza</label>
+            <input id="doza" type="number"  placeholder="600">
+            <p style="color:white;">Rezultatul este <span id="rezul"> 1 mg/L </span></p>
+            <button onclick="calcu()">Modifică valorile</button>
+        </div>
+        <script>
+            function calcu(){
+            const n = parseFloat(document.getElementById("volum").value) || 0;
+            const m = parseFloat(document.getElementById("doza").value) || 0;
+            const concen = (m * (33/100))/n;
+            document.getElementById("rezul").textContent = concen + "mg/L";
+            }
+        </script>
+            </div>
+        </body>
+        </html>
+        
